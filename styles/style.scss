@@ -1,0 +1,302 @@
+:root {
+  --bg-main-color: rgb(109, 168, 113);
+}
+
+body{
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.Main-Button {
+  border: none;
+
+  button {
+    background-color: var(--bg-main-color);
+    border: none;
+    transition: 0.5s;
+
+    &:hover {
+      transition: 0.5s;
+      background-color: palevioletred;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: 'Yu Gothic';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}
+header {
+
+  background-color: var(--bg-main-color);
+  z-index: 2;
+  .Header-Content {
+    margin: 0 auto;
+    width: 1200px;
+
+    @media (max-width: 1200px) {
+        height: 66px;
+    }
+
+    &-Tittle {
+      font-family: 'Georgia';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.75em;
+      line-height: 50px;
+      color: white;
+      padding: 0;
+    }
+
+    .navbar-nav {
+      font-family: 'Yu Gothic';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.125em;
+      line-height: 29px;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--bg-main-color);
+      transition: 0.5s;
+
+      @media (min-width: 1200px) {
+        color: white;
+      }
+    }
+
+    &-Text {
+      z-index: 3;
+      @media (max-width: 1200px) {
+        background: none;
+        position: relative;
+        top:8px;
+      }
+      ul {
+        background-color: white;
+        @media (min-width: 1200px) {
+          background: none;
+        }
+      }
+    }
+  }
+}
+.Banner-Container {
+  background-image: url("../img/coffee1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+
+  @media (max-width: 700px) {
+    background-image: url("../img/coffee1adap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .Banner-Content {
+    height: 32.5em;
+
+    &-Tittle {
+      font-family: 'Shadows Into Light';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 6.875rem;
+      line-height: 177px;
+      color: #FFFFFF;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+
+      @media (max-width: 700px) {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+.Menu-Container {
+  margin: 0 auto;
+  width: 1200px;
+
+  .Menu-Content {
+
+    &-Tittle {
+      font-family: 'Shadows Into Light';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 35px;
+
+    }
+
+    &-Circles {
+
+      span {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+      }
+
+      &-Circle {
+
+        &_Drink {
+          width: 350px;
+          height: 350px;
+          border: 9px solid #81613B;
+          border-radius: 200px;
+          background-image: url("../img/drinks1.png");
+          background-position: center;
+
+          &_Bg {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0.8) 25%);
+            width: 350px;
+            height: 333px;
+            border-radius: 200px;
+
+          }
+        }
+
+        &_Cakes {
+          width: 350px;
+          height: 350px;
+          border: 9px solid #81613B;
+          border-radius: 200px;
+          background-image: url("../img/drinks3.png");
+          background-position: center;
+        }
+
+        &_Food {
+          width: 350px;
+          height: 350px;
+          border: 9px solid #81613B;
+          border-radius: 200px;
+          background-image: url("../img/drinks2.png");
+          background-position: center;
+        }
+      }
+    }
+  }
+}
+.About-Container{
+  background-image: url("../img/cafe1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+@media (max-width: 1170px) {
+  background-image: url("../img/cafe1adap.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+  .About-Content{
+    height: 600px ;
+    width: 1200px;
+    margin: 0 auto;
+
+    &-Tittle{
+      span{
+        font-family: 'Shadows Into Light';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 35px;
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+
+        p{
+          font-family: 'Georgia';
+          font-size: 20px;
+          line-height: 35px;
+        }
+      }
+    }
+
+    &-Text{
+      font-family: 'Yu Gothic';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 26px;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+
+      @media (max-width: 400px) {
+        font-size: 1rem;
+        font-family: 'Yu Gothic';
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+      }
+    }
+    p{
+      margin: 0;
+    }
+  }
+}
+.News-Container {
+  background-color: rgba(129, 97, 59, 0.2);
+
+  .News-Content {
+    width: 1200px;
+    margin: 0 auto;
+
+    &-Tittle{
+
+      span{
+        font-family: 'Shadows Into Light';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 35px;
+      }
+      p{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 35px;
+      }
+    }
+  }
+}
+footer {
+  height: 100%;
+  .Footer-Content {
+    height: 100%;
+
+
+    &-Info {
+      font-family: 'Yu Gothic';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    &-Privacy {
+      font-family: 'Georgia';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}
+  .Arrow_Fixed {
+    width: 32px;
+    height: 32px;
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    opacity: 0.8;
+    background-color: #668E68;
+    border-radius: 200px;
+    background-image: url("../img/Polygon 1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }

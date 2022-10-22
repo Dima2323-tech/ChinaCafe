@@ -1,0 +1,286 @@
+:root {
+  --bg-main-color: rgb(109, 168, 113);
+}
+
+body {
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Main-Button {
+  border: none;
+}
+.Main-Button button {
+  background-color: var(--bg-main-color);
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.Main-Button button:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: palevioletred;
+}
+.Main-Button button a {
+  text-decoration: none;
+  font-family: "Yu Gothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+header {
+  background-color: var(--bg-main-color);
+  z-index: 2;
+}
+header .Header-Content {
+  margin: 0 auto;
+  width: 1200px;
+}
+@media (max-width: 1200px) {
+  header .Header-Content {
+    height: 66px;
+  }
+}
+header .Header-Content-Tittle {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.75em;
+  line-height: 50px;
+  color: white;
+  padding: 0;
+}
+header .Header-Content .navbar-nav {
+  font-family: "Yu Gothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125em;
+  line-height: 29px;
+  padding: 0;
+}
+header .Header-Content a {
+  text-decoration: none;
+  color: var(--bg-main-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+@media (min-width: 1200px) {
+  header .Header-Content a {
+    color: white;
+  }
+}
+header .Header-Content-Text {
+  z-index: 3;
+}
+@media (max-width: 1200px) {
+  header .Header-Content-Text {
+    background: none;
+    position: relative;
+    top: 8px;
+  }
+}
+header .Header-Content-Text ul {
+  background-color: white;
+}
+@media (min-width: 1200px) {
+  header .Header-Content-Text ul {
+    background: none;
+  }
+}
+
+.Banner-Container {
+  background-image: url("../img/coffee1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media (max-width: 700px) {
+  .Banner-Container {
+    background-image: url("../img/coffee1adap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+.Banner-Container .Banner-Content {
+  height: 32.5em;
+}
+.Banner-Container .Banner-Content-Tittle {
+  font-family: "Shadows Into Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6.875rem;
+  line-height: 177px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 700px) {
+  .Banner-Container .Banner-Content-Tittle {
+    font-size: 4rem;
+  }
+}
+
+.Menu-Container {
+  margin: 0 auto;
+  width: 1200px;
+}
+.Menu-Container .Menu-Content-Tittle {
+  font-family: "Shadows Into Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 35px;
+}
+.Menu-Container .Menu-Content-Circles span {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+}
+.Menu-Container .Menu-Content-Circles-Circle_Drink {
+  width: 350px;
+  height: 350px;
+  border: 9px solid #81613B;
+  border-radius: 200px;
+  background-image: url("../img/drinks1.png");
+  background-position: center;
+}
+.Menu-Container .Menu-Content-Circles-Circle_Drink_Bg {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.8)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0.8) 25%);
+  width: 350px;
+  height: 333px;
+  border-radius: 200px;
+}
+.Menu-Container .Menu-Content-Circles-Circle_Cakes {
+  width: 350px;
+  height: 350px;
+  border: 9px solid #81613B;
+  border-radius: 200px;
+  background-image: url("../img/drinks3.png");
+  background-position: center;
+}
+.Menu-Container .Menu-Content-Circles-Circle_Food {
+  width: 350px;
+  height: 350px;
+  border: 9px solid #81613B;
+  border-radius: 200px;
+  background-image: url("../img/drinks2.png");
+  background-position: center;
+}
+
+.About-Container {
+  background-image: url("../img/cafe1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 1170px) {
+  .About-Container {
+    background-image: url("../img/cafe1adap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+.About-Container .About-Content {
+  height: 600px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.About-Container .About-Content-Tittle span {
+  font-family: "Shadows Into Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 35px;
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+}
+.About-Container .About-Content-Tittle span p {
+  font-family: "Georgia";
+  font-size: 20px;
+  line-height: 35px;
+}
+.About-Container .About-Content-Text {
+  font-family: "Yu Gothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 400px) {
+  .About-Container .About-Content-Text {
+    font-size: 1rem;
+    font-family: "Yu Gothic";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  }
+}
+.About-Container .About-Content p {
+  margin: 0;
+}
+
+.News-Container {
+  background-color: rgba(129, 97, 59, 0.2);
+}
+.News-Container .News-Content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.News-Container .News-Content-Tittle span {
+  font-family: "Shadows Into Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 35px;
+}
+.News-Container .News-Content-Tittle p {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+footer {
+  height: 100%;
+}
+footer .Footer-Content {
+  height: 100%;
+}
+footer .Footer-Content-Info {
+  font-family: "Yu Gothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+}
+footer .Footer-Content-Privacy {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.Arrow_Fixed {
+  width: 32px;
+  height: 32px;
+  right: 20px;
+  bottom: 20px;
+  position: fixed;
+  opacity: 0.8;
+  background-color: #668E68;
+  border-radius: 200px;
+  background-image: url("../img/Polygon 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
